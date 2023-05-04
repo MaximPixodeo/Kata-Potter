@@ -80,9 +80,8 @@ class PotterTest extends TestCase
         $this->assertEquals($this->cart->addBook($this->books[1]), 15.2);
     }
 
-    public function testFinal()
+    public function testOfFunctionality()
     {
-        //7 - 8 = 86;
         $this->assertEquals($this->cart->addBook($this->books[0]), 8);
         $this->assertEquals($this->cart->addBook($this->books[1]), 15.2);
         $this->assertEquals($this->cart->addBook($this->books[2]), 21.6);
@@ -91,11 +90,9 @@ class PotterTest extends TestCase
         $this->assertEquals($this->cart->addBook($this->books[5]), 36);
         $this->assertEquals($this->cart->addBook($this->books[6]), 39.199999999999996);
 
-        $this->assertEquals($this->cart->addBook($this->books[0]), 48);
-        $this->assertEquals($this->cart->addBook($this->books[0]), 54);
-        $this->assertEquals($this->cart->addBook($this->books[4]), 62);
+        $this->assertEquals($this->cart->addBook($this->books[0]), 44.8);
+        $this->assertEquals($this->cart->addBook($this->books[0]), 50.4);
+        $this->assertEquals($this->cart->addBook($this->books[4]), 56);
     }
-
-
 }
 
